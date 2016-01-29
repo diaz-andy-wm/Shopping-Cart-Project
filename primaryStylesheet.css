@@ -1,0 +1,149 @@
+/*DieWing Products Website*/
+/*Primary CSS*/
+/*By Andy Diaz*/
+
+/**************//**************//**************/
+/**************//**  GENERAL **//**************/
+/**************//**************//**************/
+body{
+    background-color: #060606;
+}
+h1 {
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 53px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1px;
+}
+/**************//**************//**************/
+/**************//**  HEADER  **//**************/
+/**************//**************//**************/
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+}
+#head{
+    float: top;
+    color: #ffedbd;
+}
+#siteName{
+    float: left;
+    margin-left: 25px;
+}
+/*signIn start*/
+#signIn{
+    float: right;
+}
+#signIn ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#signIn li{
+    float: right;
+    margin-right: 25px;
+}
+#signIn li a{
+    border-radius:15px;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffedbd;
+}
+#signIn li a:hover {
+    background-color: #333;
+}
+/*signIn end*/
+
+/*navbar start*/
+#navbar{
+
+}
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navbar li{
+    float: right;
+    margin-right: 25px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 23px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 1px;
+    color: white;
+}
+#navbar li a{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+#navbar li a:hover {
+    background-color: #870006;
+}
+/*navbar end*/
+
+/**************//**************//**************/
+/**************//** CONTENT  **//**************/
+/**************//**************//**************/
+#content{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin-top: 120px;
+    margin-bottom: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/**************//**************//**************/
+/**************//**  FOOTER  **//**************/
+/**************//**************//**************/
+footer{
+    text-align: center;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1px;
+    color: #555555;
+}
+#lowLinks a{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #7e7262;
+}
