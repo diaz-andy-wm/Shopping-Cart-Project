@@ -13,6 +13,7 @@
     <div id="head">
         <div id="siteName">
             <h1>DieWing</h1>
+            <img src="pictures/DW-logo(white).png">
         </div>
         <br>
         <div id="signIn">
@@ -25,11 +26,11 @@
     <br><br><br>
     <div id="navbar">
         <ul>
+            <li style="float: left; margin-left: 7%"><p>Look Fly, Friend</p></li>
             <li><a href="FAQ.php">FAQ</a></li>
             <li><a href="products.php">Products</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="index.php">Home</a></li>
-            <li style="float: left; margin-left: 7%"><p>Look Fly, Friend</p></li>
         </ul>
     </div>
 </header>
