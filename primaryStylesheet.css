@@ -8,14 +8,6 @@
 body{
     background-color: #060606;
 }
-h1 {
-    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    font-size: 53px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 1px;
-}
 /**************//**************//**************/
 /**************//**  HEADER  **//**************/
 /**************//**************//**************/
@@ -32,9 +24,25 @@ header{
     float: top;
     color: #ffedbd;
 }
+
+/*siteName start*/
 #siteName{
     float: left;
     margin-left: 25px;
+}
+#siteName img{
+    float: left;
+    height: 70px;
+    width: 100px;
+}
+#siteName h1{
+    float: left;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 53px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1px;
 }
 /*signIn start*/
 #signIn{
@@ -146,4 +154,8 @@ footer{
     padding: 14px 16px;
     text-decoration: none;
     color: #7e7262;
+}
+#lowLinks img{
+    height: 52px;
+    width: 75px;
 }

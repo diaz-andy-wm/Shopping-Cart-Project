@@ -53,6 +53,7 @@
         <a href="index.php">Home</a>
         <a href="signIn.php">Sign-In</a>
         <a href="about.php">About Us</a>
+        <img src="pictures/DW-logo(grey).png">
     </div>
 </footer>
 <!--***  footer end   ***-->
