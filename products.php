@@ -13,7 +13,7 @@
     <div id="head">
         <div id="siteName">
             <h1>DieWing</h1>
-            <img src="pictures/DW-logo(white).png">
+            <img src="pictures/DW-logo(tan).png">
         </div>
         <br>
         <div id="signIn">
@@ -38,8 +38,73 @@
 <!--# # # # # # # # # # -->
 <!--#   CONTENT DIV   #-->
 <!--# # # # # # # # # # -->
-<div id="content">
-    <img src="http://yaleherald.com/wp-content/uploads/2011/04/BTbw-550x269.jpg">
+<div id="pradaList">
+    <div class="productLine">
+        <ul>
+            <li>
+                <div class="open">
+                <img class="itm1" src="products/bowtie.png">
+                    <p>Black Bowtie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                <img class="itm2" src="products/bowtie.png">
+                    <p>Silver Bowtie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                <img class="itm3" src="products/bowtie.png">
+                    <p>White Bowtie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+        </ul>
+    </div>
+    <div class="productLine">
+        <ul>
+            <li>
+                <div class="open">
+                    <img class="itm1" src="products/tie.png">
+                    <p>Black Tie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                    <img class="itm2" src="products/tie.png">
+                    <p>Silver Tie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                    <img class="itm3" src="products/tie.png">
+                    <p>White Tie</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+        </ul>
+    </div>
+    <div class="productLine">
+        <ul>
+            <li>
+                <div class="open">
+                    <img class="itm1" src="products/wallet.png">
+                    <p>Black Wallet</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                    <img class="itm2" src="products/wallet.png">
+                    <p>Silver Wallet</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+            <li>
+                <div class="open">
+                    <img class="itm3" src="products/wallet.png">
+                    <p>White Wallet</p>
+                    <a href="#" class="myButton">Cart</a>
+                </div></li>
+        </ul>
+    </div>
 </div>
 <!--***  content end  ***-->
 <!--# # # # # # # # # #-->

@@ -13,7 +13,7 @@
     <div id="head">
         <div id="siteName">
             <h1>DieWing</h1>
-            <img src="pictures/DW-logo(white).png">
+            <img src="pictures/DW-logo(tan).png">
         </div>
         <br>
         <div id="signIn">
