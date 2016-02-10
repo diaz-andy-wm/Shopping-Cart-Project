@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DieWing Product Index</title>
+    <title>DieWing Sign-In</title>
     <link rel="stylesheet" type="text/css" href="primaryStylesheet.css">
 </head>
 <body>
@@ -18,35 +18,35 @@
 <!--# # # # # # # # # # -->
 <div id="signInContent">
 <h3>Log-in</h3>
-    <form id="logIn">
+    <form id="logIn" method="post">
         <label for="logInUsername">Username: </label>
-        <input type="text" class="infoSlot" name="logInsername" id="logInUsername"><br>
+        <input type="text" class="infoSlot" name="logInUsername" id="logInUsername"><br>
 
-        <label for="Password">Password: </label>
+        <label for="logInPassword">Password: </label>
         <input type="password" class="infoSlot" name="logInPassword" id="logInPassword"><br>
-        <button type="button" class="otherButton" id="logInSubmit">Log-In</button><br>
+
+        <button type="button" class="otherButton" name="logInSubmit" id="logInSubmit">Log-In</button><br>
+
         <a href="javascript:void(0)" class="otherButton" onclick = "document.getElementById('subs1').style.display='block';document.getElementById('fade').style.display='block'">Register</a>
     </form>
-
+    <!--*###############*-->
     <!--* register form *-->
+    <!--*###############*-->
     <div id="subs1" class="white_content">
         <h3>Register</h3><img src="pictures/DW-logo.png">
         <div id="regDiv">
-        <form id="register">
-            <label for="Username">Username: </label>
-            <input type="text" class="infoSlot" name="Username" id="Username"><br>
+        <form id="register" method='post'>
+            <label for="username">Username: </label>
+            <input type="text" class="infoSlot" name="username" id="username"><br>
 
             <label for="Password">Password: </label>
             <input type="password" class="infoSlot" name="Password" id="Password"><br>
 
-            <label for="confirmPassword">Confirm Password: </label>
-            <input type="password" class="infoSlot" name="confirmPassword" id="confirmPassword"><br>
+            <label for="email">Email: </label>
+            <input type="text" class="infoSlot" name="email" id="email"><br>
 
             <label for="dateOfBirth">Date of Birth: </label>
             <input type="date" class="infoSlot" name="dateOfBirth" id="dateOfBirth"><br>
-
-            <label for="email">Email: </label>
-            <input type="text" class="infoSlot" name="email" id="email"><br>
 
             <label for="address">Address: </label>
             <input type="text" class="infoSlot" name="address" id="address"><br>
@@ -127,12 +127,58 @@
 
             <label for="credCard">Credit/Debt Card: </label>
             <input type="text" class="infoSlot" name="credCard" id="credCard"><br>
-            <button type="button" id="submit">Submit</button>
+
+            <input type='submit' class='submit' name='submit' value='Submit' />
         </form>
         </div>
         <a href = "javascript:void(0)" class="close" onclick = "document.getElementById('subs1').style.display='none';document.getElementById('fade').style.display='none'">x</a>
     </div>
+    <?php
+    ///////////////
+    // BASE INFO //
+    ///////////////
+    $db_host = 'localhost';
+    $db_user = 'root';
+    $db_pwd = 'root';
+    $database = 'DieWing_db';
+
+    // Connection Test
+    if (!mysql_connect($db_host, $db_user, $db_pwd))
+        die("Can't connect to database");
+    if (!mysql_select_db($database))
+        die("Can't select database");
+
+
+
+    ///////////////////
+    // REGISTER CODE //
+    ///////////////////
+    $usertable = 'user';
+
+    if(isset($_POST['submit'])) {
+    $username = mysql_real_escape_string($_POST['username']);
+    $Password = mysql_real_escape_string($_POST['Password']);
+    $email = mysql_real_escape_string($_POST['email']);
+    $dateOfBirth = mysql_real_escape_string($_POST['dateOfBirth']);
+    $address = mysql_real_escape_string($_POST['address']);
+    $city = mysql_real_escape_string($_POST['city']);
+    $state = mysql_real_escape_string($_POST['state']);
+    $country = mysql_real_escape_string($_POST['country']);
+    $zip = mysql_real_escape_string($_POST['zip']);
+    $credCard = mysql_real_escape_string($_POST['credCard']);
+
+    if (mysql_query("INSERT INTO $usertable(username,password,email,birthday,address,city,state,country,zip,creditCard) VALUES('$username','$Password','$email','$dateOfBirth','$address','$city','$state','$country','$zip','$credCard')")){
+    ?>
+    <script>alert('successfully registered ');</script>
+    <?php
+    } else {
+    ?>
+    <script>alert('error while registering you...');</script><?php
+    }}
+    ?>
+    <!--*###################*-->
     <!--* register form end *-->
+    <!--*###################*-->
 
     <div id="fade" class="black_overlay"></div>
 </div>
@@ -144,7 +190,7 @@
     <div id="copyright">
         <p>&copy 2015 - DieWing Inc. All Rights Reserved</p>
     </div>
-    <div id="signInlowLinks">
+    <div id="signInLowLinks">
         <a href="index.php">Home</a>
         <a href="signIn.php">Sign-In</a>
         <a href="about.php">About Us</a>

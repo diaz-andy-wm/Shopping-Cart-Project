@@ -339,35 +339,38 @@ header{
     width: 27%;
     border-style: solid;
 }
-.myButton {
+.myButton{
     -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
-    -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
-    box-shadow: 0px 1px 0px 0px #1c1b18;
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #875205));
-    background:-moz-linear-gradient(top, #ffffff 5%, #875205 100%);
-    background:-webkit-linear-gradient(top, #ffffff 5%, #875205 100%);
-    background:-o-linear-gradient(top, #ffffff 5%, #875205 100%);
-    background:-ms-linear-gradient(top, #ffffff 5%, #875205 100%);
-    background:linear-gradient(to bottom, #ffffff 5%, #875205 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#947943',GradientType=0);
-    background-color: white;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    border:2px solid #333029;
-    display:inline-block;
-    cursor:pointer;
-    color: #ffedfd;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 98px;
+    height: 26px;
+    cursor: pointer;
+    margin: 9px 14% 9px 0;
+    padding: 10px 20px;
+    border: 3px solid rgb(209, 181, 130);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    font-size:13px;
-    font-weight:bold;
-    padding:12px 16px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #2a2a2a;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #804e04;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    text-shadow: -1px -1px 0 rgba(209, 181, 130, 0.66);
 }
-.myButton:active {
+.myButton:active{
     position:relative;
     top:1px;
+}
+.myButton:hover{
+    content: attr(data-hover);
 }
 
 .itm1{
@@ -419,7 +422,7 @@ header{
     border-color: #d1a039;
     box-shadow: 0 0 10px #d1a039;
 }
-#register button{
+#register .submit{
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -480,7 +483,7 @@ footer{
     height: 52px;
     width: 75px;
 }
-#signInlowLinks a{
+#signInLowLinks a{
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
     font-size: 20px;
     font-style: normal;
@@ -493,10 +496,134 @@ footer{
     text-decoration: none;
     color: #7e777d;
 }
-#signInlowLinks img{
+#signInLowLinks img{
     height: 52px;
     width: 75px;
 }
-/*example start*/
+#CartLowLinks {
+    margin-bottom: 70px;
+}
 
+#CartLowLinks a{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #7e7262;
+}
+#CartLowLinks img{
+    height: 52px;
+    width: 75px;
+}
+
+/*php start*/
+#php{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    background-color: white;
+    font-family: fantasy;
+}
+/*php end*/
+
+/**************//**************//**************/
+/**************//** SECTION  **//**************/
+/**************//**************//**************/
+section{
+    border-top: solid;
+    border-color: #b6b6b6;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    background-image: url("http://ecx.images-amazon.com/images/I/51pZII3acZL._SL1500_.jpg");
+    background-size:  800px 130px;
+    background-position-x: 600px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+/*cart start*/
+#cart{
+    float: bottom;
+}
+#cart ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+#cart li{
+    margin-top: 13px;
+    float: right;
+    margin-right: 20px;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#cart li a{
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #608fbb;
+}
+#cart li a:hover {
+    border-radius: 10px;
+    background-color: #2d2d2d;
+}
+/*cart end*/
+
+/*cartName start*/
+#cartName{
+    margin-left: 2px;
+    float: left;
+}
+#cartName img{
+    margin-left: 88px;
+    margin-top: 0;
+    float: left;
+    height: 70px;
+    width: 100px;
+}
+#cartName h1{
+    margin-top: 40px;
+    float: left;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 53px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1px;
+}
+/*cartName end*/
+
+/*openCart start*/
+
+
+/*openCart end*/
+
+/*example start*/
 /*example end*/

@@ -45,7 +45,7 @@
                 <div class="open">
                 <img class="itm1" src="products/bowtie.png">
                     <p>Black Bowtie</p>
-                    <a href="#" class="myButton">Cart</a>
+                    <a href="#" data-hover="17.95" class="myButton">Cart</a>
                 </div></li>
             <li>
                 <div class="open">

@@ -49,7 +49,7 @@
     <div id="copyright">
         <p>&copy 2015 - DieWing Inc. All Rights Reserved</p>
     </div>
-    <div id="lowLinks">
+    <div id="CartLowLinks">
         <a href="index.php">Home</a>
         <a href="signIn.php">Sign-In</a>
         <a href="about.php">About Us</a>
@@ -57,6 +57,27 @@
     </div>
 </footer>
 <!--***  footer end   ***-->
+<!--# # # # # # # # #-->
+<!--#   CART DIV    #-->
+<!--# # # # # # # # #-->
+<section>
+    <div id="cartName">
+        <img src="pictures/DW-logo.png">
+        <h1>Cart</h1>
+    </div>
+    <div id="cart">
+        <ul>
+            <li><a href="">^</a></li>
+            <li>N/A</li>
+            <li>Items: </li>
+        </ul>
+    </div>
+</section>
+<nav id="openCart">
+    <h3>Menu</h3>
+
+</nav>
+<!--***    cart end   ***-->
 <!--***    body end   ***-->
 </body>
 </html>
