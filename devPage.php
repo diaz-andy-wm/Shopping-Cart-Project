@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>DieWing Product Index</title>
-    <link rel="stylesheet" type="text/css" href="jumboTron.css">
     <link rel="stylesheet" type="text/css" href="primaryStylesheet.css">
 </head>
 <body>
@@ -50,7 +49,7 @@
     <div id="copyright">
         <p>&copy 2015 - DieWing Inc. All Rights Reserved</p>
     </div>
-    <div id="lowLinks">
+    <div id="CartLowLinks">
         <a href="index.php">Home</a>
         <a href="signIn.php">Sign-In</a>
         <a href="about.php">About Us</a>
@@ -58,6 +57,40 @@
     </div>
 </footer>
 <!--***  footer end   ***-->
+<!--# # # # # # # # # #-->
+<!--#   SECTION DIV   #-->
+<!--# # # # # # # # # #-->
+<section>
+    <div id="stuffName">
+        <img src="pictures/DW-logo.png">
+        <h1>Cart</h1>
+    </div>
+    <div id="stuff">
+        <ul>
+            <li><a href="#" onclick="myJsFunc();">/^\</a></li>
+            <li>N/A</li>
+            <li>Items: </li>
+        </ul>
+    </div>
+</section>
+<script>
+    function myJsFunc() {
+        alert("YOU BROKE IT!!!");
+    }
+</script>
+<nav>
+    <nav>
+        <div id="stuffOpen">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="FAQ.php">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+</nav>
+<!--***  section end   ***-->
 <!--***    body end   ***-->
 </body>
 </html>

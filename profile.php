@@ -35,12 +35,24 @@
         </ul>
     </div>
 </header>
+<div id="cart">
+    <ul>
+        <li><a href="javascript:void(0)" class="otherButton" onclick = "document.getElementById('subs1').style.display='block';document.getElementById('fade').style.display='block'">USERS</a></li>
+    </ul>
+</div>
 <!--***  header end  ***-->
 <!--# # # # # # # # # # -->
 <!--#   CONTENT DIV   #-->
 <!--# # # # # # # # # # -->
 <div id="content">
-    <img src="http://yaleherald.com/wp-content/uploads/2011/04/BTbw-550x269.jpg">
+    <div class="textbox">
+        <h1>Welcome New User!</h1>
+        <h3>Thank you for shopping with us.</h3>
+        <p>We would like to show our appreciation to (*PLACEHOLDER*) by giving you 50% off an item on your next purchase! Just click on the link below to receive your checkout code.</p>
+        <a href="">Promo Code</a>
+        <p>Thank you, come again!</p>
+        <img src="pictures/DW-logo.png">
+    </div>
 </div>
 <!--***  content end  ***-->
 <!--# # # # # # # # # #-->
@@ -58,55 +70,68 @@
     </div>
 </footer>
 <!--***  footer end   ***-->
-<div id="php">
-    <?php
-    ///////////////
-    // BASE INFO //
-    ///////////////
-    $db_host = 'localhost';
-    $db_user = 'root';
-    $db_pwd = 'root';
+<!--# # # # # # # # #-->
+<!--#   PHP STUFF   #-->
+<!--# # # # # # # # #-->
 
-    $database = 'DieWing_db';
-    $table = 'user';
+<div id="subs1" class="List">
+    <h3>Users</h3><img src="pictures/DW-logo.png">
+    <div id="php">
+        <div id="php">
+            <?php
+            ///////////////
+            // BASE INFO //
+            ///////////////
+            $db_host = 'localhost';
+            $db_user = 'root';
+            $db_pwd = 'root';
 
-    // Connection Test
-    if (!mysql_connect($db_host, $db_user, $db_pwd))
-        die("Can't connect to database");
-    if (!mysql_select_db($database))
-        die("Can't select database");
+            $database = 'DieWing_db';
+            $table1 = 'user';
 
-    // sending query
-    $result = mysql_query("SELECT * FROM {$table}");
-    if (!$result) {
-        die("Query to show fields from table failed");
-    }
+            // Connection Test
+            if (!mysql_connect($db_host, $db_user, $db_pwd))
+                die("Can't connect to database");
+            if (!mysql_select_db($database))
+                die("Can't select database");
 
-    $fields_num = mysql_num_fields($result);
+            // sending query
+            $result = mysql_query("SELECT * FROM {$table1}");
+            if (!$result) {
+                die("Query to show fields from table failed");
+            }
 
-    echo "<table border='1'><tr>";
-    // printing table headers
-    for($i=0; $i<$fields_num; $i++)
-    {
-        $field = mysql_fetch_field($result);
-        echo "<td>{$field->name}</td>";
-    }
-    echo "</tr>\n";
-    // printing table rows
-    while($row = mysql_fetch_row($result))
-    {
-        echo "<tr>";
+            $fields_num = mysql_num_fields($result);
 
-        // $row is array... foreach( .. ) puts every element
-        // of $row to $cell variable
-        foreach($row as $cell)
-            echo "<td>$cell</td>";
+            echo "<table border='1'><tr>";
+            // printing table headers
+            for($i=0; $i<$fields_num; $i++)
+            {
+                $field = mysql_fetch_field($result);
+                echo "<td>{$field->name}</td>";
+            }
+            echo "</tr>\n";
+            // printing table rows
+            while($row = mysql_fetch_row($result))
+            {
+                echo "<tr>";
 
-        echo "</tr>\n";
-    }
-    mysql_free_result($result);
-    ?>
+                // $row is array... foreach( .. ) puts every element
+                // of $row to $cell variable
+                foreach($row as $cell)
+                    echo "<td>$cell</td>";
+
+                echo "</tr>\n";
+            }
+            mysql_free_result($result);
+            ?>
+        </div>
+    </div>
+    <a href = "javascript:void(0)" class="close" onclick = "document.getElementById('subs1').style.display='none';document.getElementById('fade').style.display='none'">x</a>
 </div>
+
+
+<!--***  php stuff end  ***-->
 
 
 <!--***    body end   ***-->

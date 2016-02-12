@@ -141,6 +141,84 @@ header{
 }
 /*navbar end*/
 
+/*cart start*/
+#cart{
+    width: 10%;
+    background-color: transparent;
+    float: top;
+    margin-top: 120px;
+    color: #d1b682;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    z-index: 100;
+}
+#cart ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ba9c6f;
+}
+#cart li{
+    float: top;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 1px;
+    color: white;
+}
+#cart li a{
+    float: right;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+#cart li a:hover {
+    background-color: #875205;
+}
+.List{
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 10%;
+    left: 10%;
+    width: 75%;
+    height: 75%;
+    padding: 16px;
+    border: 16px solid #875205;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+.List h3{
+    float: left;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    margin-left: 130px;
+}
+.List img{
+    float: left;
+    margin-top: 20px;
+    height: 70px;
+    width: 100px;
+}
+/*cart end*/
+
 /**************//**************//**************/
 /**************//** CONTENT  **//**************/
 /**************//**************//**************/
@@ -161,6 +239,43 @@ header{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/*textbox start*/
+.textbox{
+    padding: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.textbox h1{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    display: block;
+}
+.textbox h3{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    display: block;
+}
+.textbox a{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    display: block;
+    color: #875205;
+}
+.textbox img{
+    height: 70px;
+    width: 100px;
+}
+/*textbox end*/
 
 /*signIn start*/
 #signInContent{
@@ -524,8 +639,7 @@ footer{
 
 /*php start*/
 #php{
-    margin-left: 15%;
-    margin-right: 15%;
+    left:0;
     text-align: center;
     background-color: white;
     font-family: fantasy;
@@ -551,15 +665,15 @@ section{
     z-index: 100;
 }
 /*cart start*/
-#cart{
+#stuff{
     float: bottom;
 }
-#cart ul{
+#stuff ul{
     list-style-type: none;
     padding: 0;
     overflow: hidden;
 }
-#cart li{
+#stuff li{
     margin-top: 13px;
     float: right;
     margin-right: 20px;
@@ -574,7 +688,7 @@ section{
     padding: 14px 16px;
     text-decoration: none;
 }
-#cart li a{
+#stuff li a{
     position: absolute;
     bottom: 40px;
     right: 15px;
@@ -590,25 +704,25 @@ section{
     text-decoration: none;
     color: #608fbb;
 }
-#cart li a:hover {
+#stuff li a:hover {
     border-radius: 10px;
     background-color: #2d2d2d;
 }
 /*cart end*/
 
 /*cartName start*/
-#cartName{
+#stuffName{
     margin-left: 2px;
     float: left;
 }
-#cartName img{
+#stuffName img{
     margin-left: 88px;
     margin-top: 0;
     float: left;
     height: 70px;
     width: 100px;
 }
-#cartName h1{
+#stuffName h1{
     margin-top: 40px;
     float: left;
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
@@ -620,10 +734,14 @@ section{
 }
 /*cartName end*/
 
-/*openCart start*/
+/**************//**************//**************/
+/**************//***   NAV  ***//**************/
+/**************//**************//**************/
+#nav{
+    float: top;
+    color: #d1b682;
+}
 
-
-/*openCart end*/
 
 /*example start*/
 /*example end*/
