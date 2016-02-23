@@ -143,6 +143,11 @@
     height:320px;
     width: 703px
 }
+.imgSize2{
+    -webkit-filter: brightness(3); filter: brightness(3);
+    height:320px;
+    width: 703px
+}
 #mask {
     overflow:hidden;
     height:320px;
