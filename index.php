@@ -57,7 +57,7 @@
                     </li>
 
                     <li class="fourthanimation">
-                        <img class="imgSize" src="http://wallpoper.com/images/00/40/65/67/minimalistic-eleventh_00406567.jpg"/>
+                        <img class="imgSize" src="http://static1.1.sqspcdn.com/static/f/206897/12336548/1306085641827/eephoto.bowtie.preview.jpg?token=XHTiw6j8WgnDsAgpZqrlPaCaUyQ%3D"/>
                     </li>
 
                     <li class="fifthanimation">
@@ -67,28 +67,38 @@
             </div>
             <ul style="margin-left: 703px">
                 <li class="firstanimation">
+                    <h3>TIES</h3>
                     <img class="imgSize2" src="http://jorgequeiroz.com/site/wp-content/uploads/2013/01/tie-1000x666.jpg"/>
                 </li>
 
                 <li class="secondanimation">
+                    <h3>WALLETS</h3>
                     <img class="imgSize2" src="https://res.cloudinary.com/trunk-club/image/upload/v1428330508/public_site/blog/2013/01/eg0eH.jpg"/>
                 </li>
 
                 <li class="thirdanimation">
+                    <h3>MORE TIES!</h3>
                     <img class="imgSize2" src="http://2.bp.blogspot.com/-yHf0reh4_PA/T8Bcz2LupWI/AAAAAAAAAkU/r5LntmNCWhc/s1600/SpencersAtTheWaterfront_BurlingtonWeddingPhotography_VPStudiosPhotography4.jpg"/>
                 </li>
 
                 <li class="fourthanimation">
-                    <img class="imgSize2" src="http://wallpoper.com/images/00/40/65/67/minimalistic-eleventh_00406567.jpg"/>
+                    <h3>& BOW TIES</h3>
+                    <img class="imgSize2" src="http://static1.1.sqspcdn.com/static/f/206897/12336548/1306085641827/eephoto.bowtie.preview.jpg?token=XHTiw6j8WgnDsAgpZqrlPaCaUyQ%3D"/>
                 </li>
 
                 <li class="fifthanimation">
+                    <h3>& MORE BOW TIES!</h3>
                     <img class="imgSize2" src="http://blog.ismaelburciaga.com/wp-content/uploads/2011/08/promss5.jpg"/>
                 </li>
             </ul>
-        </div>
             <div class="progress-bar"></div>
         </div>
+    </div>
+</div>
+
+<div class="stuff">
+    <div class="textbox"">
+        <h1>The DieWing Way</h1>
     </div>
 </div>
 <!--***  content end  ***-->

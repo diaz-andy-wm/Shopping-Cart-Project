@@ -1,4 +1,16 @@
-/* ANIMATION */
+/**************//**************//**************/
+/**************//***  OTHER  **//**************/
+/**************//**************//**************/
+
+.stuff{
+
+}
+
+/**************//**************//**************/
+/**************//**  SLIDER  **//**************/
+/**************//**************//**************/
+
+/* ANIMATIONS */
 @-moz-keyframes cycle {
     0%  { top:0px; }
     4%  { top:0px; }
@@ -121,8 +133,8 @@
     margin:0 auto;
     overflow:hidden;
     width: 100%;
+    color: white;
 }
-
 /* CONTENT SLIDER */
 #content-slider {
     margin-top: 113px;
@@ -144,7 +156,7 @@
     width: 703px
 }
 .imgSize2{
-    -webkit-filter: brightness(3); filter: brightness(3);
+    -webkit-filter: brightness(30%); filter: brightness(30%);
     height:320px;
     width: 703px
 }
@@ -197,8 +209,19 @@
     -moz-animation-play-state:paused;
     -webkit-animation-play-state:paused;
 }
+#slider h3{
+    margin-left: 100px;
+    position: absolute;
+    z-index:1002;
+    overflow: auto;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 50px;
+    float: left;
+    color: gray;
+    font-weight: 500;
+}
 
-/* PROGRESS BAR */
+
 .progress-bar {
     background-color: #bd7405;
     position: relative;

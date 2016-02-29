@@ -45,7 +45,7 @@
 <!--#   CONTENT DIV   #-->
 <!--# # # # # # # # # # -->
 <div id="content">
-    <div class="textbox">
+    <div class="textboxT2" style="text-align: center">
         <h1>Welcome New User!</h1>
         <h3>Thank you for shopping with us.</h3>
         <p>We would like to show our appreciation to (*PLACEHOLDER*) by giving you 50% off an item on your next purchase! Just click on the link below to receive your checkout code.</p>

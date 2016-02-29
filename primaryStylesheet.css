@@ -231,6 +231,7 @@ header{
     margin-left: 10%;
     margin-right: 10%;
 }
+
 #pradaList{
     text-align: center;
     width: 80%;
@@ -240,28 +241,54 @@ header{
     margin-right: 10%;
 }
 
+.textboxIMG{
+    float: left;
+    margin-left: 25px;
+}
+.textboxIMG2{
+    float: right;
+    margin-left: 25px;
+}
+
 /*textbox start*/
 .textbox{
     padding: 5px;
     margin-left: 35px;
     margin-right: 35px;
+    line-height: 10px;
+}
+.textbox p{
+    text-align: left;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+    line-height: 5px;
 }
 .textbox h1{
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 55px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 10px;
+    display: block;
+}
+
+.textbox h2{
+    font-family: 'Brush Script MT', cursive;
     font-size: 40px;
     font-style: normal;
     font-variant: normal;
-    line-height: 20px;
+    line-height: 5px;
     display: block;
 }
 .textbox h3{
+    text-align: left;
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-variant: normal;
-    line-height: 20px;
+    line-height: 10px;
     display: block;
-}
+ }
 .textbox a{
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
     font-size: 20px;
@@ -276,6 +303,58 @@ header{
     width: 100px;
 }
 /*textbox end*/
+
+/*textbox Type2 start*/
+.textboxT2{
+    text-align: left;
+    padding: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 10px;
+}
+.textboxT2 h1{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 10px;
+    display: block;
+}
+.textboxT2 h2{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 10px;
+    display: block;
+}
+.textboxT2 h3{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    display: block;
+}
+.textboxT2 p{
+    line-height: 20px;
+    margin-left: 40px;
+}
+.textboxT2 a{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 20px;
+    display: block;
+    color: #875205;
+}
+.textboxT2 img{
+    height: 70px;
+    width: 100px;
+}
+/*textbox Type2 end*/
+
 
 /*signIn start*/
 #signInContent{
