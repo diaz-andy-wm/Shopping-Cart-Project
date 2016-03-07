@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DieWing Product Index</title>
-    <link rel="stylesheet" type="text/css" href="jumboTron.css">
-    <link rel="stylesheet" type="text/css" href="primaryStylesheet.css">
+    <title>DieWing HomePage</title>
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
 </head>
 <body>
 <!--###  body start  ###-->
@@ -14,7 +13,7 @@
     <div id="head">
         <div id="siteName">
             <h1>DieWing</h1>
-            <img src="pictures/DW-logo(tan).png">
+            <img src="pictures/DW-logo(red).png">
         </div>
         <br>
         <div id="signIn">
@@ -95,10 +94,42 @@
         </div>
     </div>
 </div>
-
 <div class="stuff">
-    <div class="textbox"">
-        <h1>The DieWing Way</h1>
+    <div class="textbox">
+        <h1 style=" text-align: center;">The DieWing Way</h1>
+        <h2>Want to Look Good?</h2>
+        <h3>Check out our <a href="products.php" style="display: inline-block;">Products Page</a>  for some good looking gear!</h3>
+        <img style="margin-left: 40.5%; margin-bottom: -80px; height: 150px; width: 200px" src="pictures/suit.png">
+    </div>
+</div>
+
+
+<img style="height: 140px;width: 80%; margin-left: 10%; margin-right: 10%;" src="pictures/skyLine.png">
+<div style="margin-top: -10px" id="content">
+    <div class="textboxT2">
+        <h1>Check out what's new!</h1>
+        <div style="text-align: center" class="productLine">
+            <ul>
+                <li>
+                    <div class="open">
+                        <img class="itm2" src="products/tie.png">
+                        <p>Silver Tie</p>
+                        <a href="products.php" class="myButton">View</a>
+                    </div></li>
+                <li>
+                    <div class="open">
+                        <img class="itm3" style="width: 70%" src="products/bowtie.png">
+                        <p>White Bowtie</p>
+                        <a href="products.php" class="myButton">View</a>
+                    </div></li>
+                <li>
+                    <div class="open">
+                        <img class="itm1" style="width: 60%" src="products/wallet.png">
+                        <p>Black Wallet</p>
+                        <a href="products.php" class="myButton">View</a>
+                    </div></li>
+            </ul>
+        </div>
     </div>
 </div>
 <!--***  content end  ***-->

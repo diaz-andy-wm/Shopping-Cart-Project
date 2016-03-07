@@ -27,6 +27,7 @@
 
         <button type="button" class="otherButton" name="logInSubmit" id="logInSubmit">Log-In</button><br>
 
+
         <a href="javascript:void(0)" class="otherButton" onclick = "document.getElementById('subs1').style.display='block';document.getElementById('fade').style.display='block'">Register</a>
     </form>
     <!--*###############*-->

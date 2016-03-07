@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DieWing Product Index</title>
+    <title>DieWing FAQ</title>
     <link rel="stylesheet" type="text/css" href="primaryStylesheet.css">
 </head>
 <body>

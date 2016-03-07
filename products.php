@@ -120,6 +120,13 @@
         </ul>
     </div>
 </div>
+<div style="border-width: 7px; border-style: inset; border-color: #c60016;" id="content">
+    <img style="float:left; width: 85px; -webkit-filter: brightness(10%); filter: brightness(10%); padding: 20px 20px" src="pictures/bowClipArt.png">
+    <div class="textboxT2">
+        <h1>Want Something Customized?</h1>
+        <h2>Contact Our Products Representative <a href=# style="display: inline-block;">HERE</a></h2>
+    </div>
+</div>
 <!--***  content end  ***-->
 <!--# # # # # # # # # #-->
 <!--#   FOOTER DIV    #-->

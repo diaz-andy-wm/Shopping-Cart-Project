@@ -18,6 +18,10 @@ body{
     top: 0;
     right: 0;
 }
+.nowrap {
+    white-space: nowrap ;
+}
+
 /**************//**************//**************/
 /**************//**  HEADER  **//**************/
 /**************//**************//**************/
@@ -291,7 +295,7 @@ header{
  }
 .textbox a{
     font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    font-size: 20px;
+    font-size: 28px;
     font-style: normal;
     font-variant: normal;
     line-height: 20px;
@@ -330,7 +334,7 @@ header{
 }
 .textboxT2 h3{
     font-family: 'Brush Script MT', cursive;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-variant: normal;
     line-height: 20px;
@@ -503,6 +507,7 @@ header{
     margin-right: 2%;
 }
 .open{
+    text-align: center;
     background-color: white;
     margin-left: 2%;
     margin-right: 2%;
